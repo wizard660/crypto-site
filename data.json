@@ -1,0 +1,29 @@
+{
+  "users": [
+    {
+      "name": "John Doe",
+      "email": "john@example.com",
+      "password": "password123",
+      "package": "Silver ($10,000)",
+      "amount": 10000,
+      "profit": 2000
+    },
+    {
+      "name": "katz avital",
+      "email": "avitalkatz15@gmail.com",
+      "password": "6700ef7f",
+      "package": "None",
+      "amount": 0,
+      "profit": 0
+    },
+    {
+      "name": "elina",
+      "email": "elinagilbert155@gmail.com",
+      "password": "159258357",
+      "package": "Starter",
+      "amount": "1000",
+      "profit": "250",
+      "kycStatus": "approved"
+    }
+  ]
+}

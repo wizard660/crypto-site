@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>KYC Verification - BitTrust</title>
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    .kyc-container {
+      max-width: 500px;
+      margin: 3rem auto;
+      padding: 2rem;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      background: #fff;
+      box-shadow: 0 4px 10px #007bff;
+      font-family: Arial, sans-serif;
+      border-style: solid;
+      border-width: thin;
+      border-color: #007bff;
+    }
+    form label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    form input, form select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    form button {
+      margin-top: 1.5rem;
+      padding: 12px;
+      width: 100%;
+      background: #0066ff;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    form button:hover {
+      background: #0052cc;
+    }
+    /* Popup overlay */
+    .popup-overlay {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.6);
+      z-index: 1000;
+    }
+    .popup-card {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      max-width: 400px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      animation: popup 0.3s ease-out;
+    }
+    @keyframes popup {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+    .popup-card h2 {
+      color: green;
+      margin-bottom: 1rem;
+    }
+    .popup-card button {
+      margin-top: 1rem;
+      padding: 10px 20px;
+      background: #0066ff;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="bit-trust-logo-container">
+    <!-- Return Button -->
+    <!-- Return Button -->
+    <button class="return-btn">⬅</button>
+    <img class="bit-trust-logo" 
+    src="/Images/crypto/ChatGPT Image Oct 1, 2025, 05_23_32 AM.png" alt="">
+  </div>
+  <a href="/contact" class="support-fab">
+  <div class="support-icon">
+    💬
+  </div>
+  <span class="support-text">How can we help you?</span>
+</a>
+  <div class="kyc-container">
+    <h2 style="color: #007bff;">Account Verification (KYC)</h2>
+    <p>Please submit your KYC details for account security.</p>
+    <p>
+      At <strong>BitTrust</strong>, your security is our top priority. 
+        KYC (Know Your Customer) verification helps us protect your account, 
+        prevent identity theft, and comply with global regulations. 
+        Verifying your identity ensures that your funds remain safe 
+        and secure.
+    </p>
+
+    <form id="kycForm" action="/kyc" method="POST" enctype="multipart/form-data">
+      <label for="idType">Select ID Type:</label>
+      <select id="idType" name="idType" required>
+        <option value="">-- Choose --</option>
+        <option value="passport">Passport</option>
+        <option value="driver_license">Driver’s License</option>
+        <option value="national_id">National ID</option>
+      </select>
+
+      <label for="frontId">Upload Front ID:</label>
+      <input type="file" id="frontId" name="frontId" accept="image/*" required>
+
+      <label for="backId">Upload Back ID:</label>
+      <input type="file" id="backId" name="backId" accept="image/*" required>
+
+      <button type="submit">Submit for Verification</button>
+    </form>
+  </div>
+
+  <% if (submitted) { %>
+    <div class="popup-overlay">
+      <div class="popup-card">
+        <h2>✅ KYC Submitted!</h2>
+        <p>Your verification request has been received.<br>
+        You’ll be notified once it’s approved.</p>
+        <a href="/dashboard"><button>Go to Dashboard</button></a>
+      </div>
+    </div>
+  <% } %>
+  <footer>
+    <div>&copy; <%= new Date().getFullYear() %> BitTrust Investment. All rights reserved.</div>
+  </footer>
+  <script src="/script.js"></script>
+</body>
+</html>

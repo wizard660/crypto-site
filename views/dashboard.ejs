@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="bit-trust-logo-container">
+    <!-- Return Button -->
+    <!-- Return Button -->
+    <button class="return-btn">⬅</button>
+    <img class="bit-trust-logo" 
+    src="/Images/crypto/ChatGPT Image Oct 1, 2025, 05_23_32 AM.png" alt="">
+  </div>
+  <a href="/contact" class="support-fab">
+  <div class="support-icon">
+    💬
+  </div>
+  <!-- Floating Chat Notification -->
+<div id="chat-notification"></div>
+  <span class="support-text">How can we help you?</span>
+</a>
+  <h1 style="margin-left: 50px; ">Welcome <%= name %> 🎉</h1>
+  <div class="verification-card">
+  <div class="verification-content">
+
+    <% if (typeof user !== "undefined" && user.kycStatus === "none") { %>
+      <div class="verify-icon">🛡️</div>
+      <h3>Complete Your Account Verification</h3>
+      <p>Verify your account to unlock all features.</p>
+      <a href="/kyc" class="btn btn-primary">Proceed</a>
+
+    <% } else if (typeof user !== "undefined" && user.kycStatus === "approved") { %>
+      <div class="verify-icon"><span style="color: #007bff;">✔</span></div>
+      <h3>You’re a Verified User</h3>
+      <p>Thank you for completing KYC verification.</p>
+
+    <% } else { %>
+      <h3>Loading user details...</h3>
+    <% } %>
+
+  </div>
+</div>
+
+
+  <div class="dashboard-card">
+    <h2>Your Plan:</h2>
+    <div class="wallet">
+      <p class="balance1"><strong>Package:</strong> <%= package %></p>
+      <p class="balance1"><strong>Amount Invested:</strong> $<%= investment %></p>
+      <p class="balance1"><strong>Profit Gained:</strong> $<%= profit %></p>
+    </div>
+    <form action="/withdraw" method="POST">
+      <button class="btn btn-primary" type="submit">💸 Withdraw</button>
+    </form>
+  </div>
+<!-- Packages Section -->
+  <section class="packages">
+    <h2>Select/Upgrade Plan</h2>
+    <div class="grid">
+      <div class="cards">
+        <h3>Starter</h3>
+        <p class="amount">$100-$1,000</p>
+        <p style="font-family: 'Open Sans', sans-serif;
+                  font-weight: 100;
+                  color: #333; /* Softer black for a friendlier feel */
+                  line-height: 0.8; margin: 5px 0px ;"
+                  ><span style="color: #007bff;">✔</span>  50% ROI</p>
+        <p style="font-family: 'Open Sans', sans-serif;
+                  font-weight: 100;
+                  color: #333; /* Softer black for a friendlier feel */
+                  line-height: 0.8; margin: 5px 0px "><span style="color: #007bff;">✔</span>  24/7 Expert Support</p>
+        <p style="font-family: 'Open Sans', sans-serif;
+                  font-weight: 100;
+                  color: #333; /* Softer black for a friendlier feel */
+                  line-height: 0.8; margin: 5px 0px "><span style="color: #007bff;">✔</span>  10% Referral Earnings</p>
+        <p style="font-family: 'Open Sans', sans-serif;
+                  font-weight: 100;
+                  color: #333; /* Softer black for a friendlier feel */
+                  line-height: 0.8; margin: 5px 0px 20px "><span style="color: #007bff;">✔</span>  1-2wks Profit Returns</p>
+        <a class="button" style="text-decoration: none; color: aliceblue;"href="/starter-payments">Choose Plan</a>
+      </div>
+      <div class="cards">
+        <h3>Bronze</h3>
+        <p class="amount">$1,000-$10,000</p>
+        <p style="font-family: 'Open Sans', sans-serif;
+                  font-weight: 100; margin: 5px 0px ;
+                  color: #333; /* Softer black for a friendlier feel */
+                  line-height: 0.8; margin: 5px 0px "><span style="color: #007bff;">✔</span>  50% ROI</p>
+        <p style="font-family: 'Open Sans', sans-serif;
+                  font-weight: 100; margin: 5px 0px ;
+                  color: #333; /* Softer black for a friendlier feel */
+                  line-height: 0.8; margin: 5px 0px "><span style="color: #007bff;">✔</span>  24/7 Expert Support</p>
+        <p style="font-family: 'Open Sans', sans-serif;
+                  font-weight: 100; margin: 5px 0px ;
+                  color: #333; /* Softer black for a friendlier feel */
+                  line-height: 0.8; margin: 5px 0px "><span style="color: #007bff;">✔</span>  15% Referral Earnings</p>
+        <p style="font-family: 'Open Sans', sans-serif;
+                  font-weight: 100; margin: 5px 0px 20px;
+                  color: #333; /* Softer black for a friendlier feel */
+                  line-height: 0.8; margin: 5px 0px 20px"><span style="color: #007bff;">✔</span>  1-2wks Profit Returns</p>
+        <a class="button" style="text-decoration: none; color: aliceblue;"href="/bronze-payments">Choose Plan</a>
+      </div>
+      <div class="cards">
+        <h3>Silver</h3>
+        <p class="amount">$10,000-$50,000</p>
+        <p style="font-family: 'Open Sans', sans-serif;
+                  font-weight: 100; margin: 5px 0px ;
+                  color: #333; /* Softer black for a friendlier feel */
+                  line-height: 0.8;"><span style="color: #007bff;">✔</span>  100% ROI</p>
+        <p style="font-family: 'Open Sans', sans-serif;
+                  font-weight: 100; margin: 5px 0px ;
+                  color: #333; /* Softer black for a friendlier feel */
+                  line-height: 0.8;"><span style="color: #007bff;">✔</span>  24/7 Expert Support</p>
+        <p style="font-family: 'Open Sans', sans-serif;
+                  font-weight: 100; margin: 5px 0px ;
+                  color: #333; /* Softer black for a friendlier feel */
+                  line-height: 0.8;"><span style="color: #007bff;">✔</span>  20% Referral Earnings</p>
+        <p style="font-family: 'Open Sans', sans-serif;
+                  font-weight: 100; margin: 5px 0px 20px;
+                  color: #333; /* Softer black for a friendlier feel */
+                  line-height: 0.8;"><span style="color: #007bff;">✔</span>  1-2wks Profit Returns</p>
+        <a class="button" style="text-decoration: none; color: aliceblue;"href="/silver-payments">Choose Plan</a>
+      </div>
+      <div class="cards">
+        <h3>Gold</h3>
+        <p class="amount">$50,000 and above</p>
+        <p style="font-family: 'Open Sans', sans-serif;
+                  font-weight: 100; margin: 5px 0px ;
+                  color: #333; /* Softer black for a friendlier feel */
+                  line-height: 0.8;"><span style="color: #007bff;">✔</span>  100% ROI</p>
+        <p style="font-family: 'Open Sans', sans-serif;
+                  font-weight: 100; margin: 5px 0px ;
+                  color: #333; /* Softer black for a friendlier feel */
+                  line-height: 0.8;"><span style="color: #007bff;">✔</span>  24/7 Expert Support</p>
+        <p style="font-family: 'Open Sans', sans-serif;
+                  font-weight: 100; margin: 5px 0px ;
+                  color: #333; /* Softer black for a friendlier feel */
+                  line-height: 0.8;"><span style="color: #007bff;">✔</span>  30% Referral Earnings</p>
+        <p style="font-family: 'Open Sans', sans-serif;
+                  font-weight: 100; margin: 5px 0px 20px ;
+                  color: #333; /* Softer black for a friendlier feel */
+                  line-height: 0.8;"> <span style="color: #007bff;">✔</span>  1-2wks Profit Returns</p>
+        <a class="button" style="text-decoration: none; color: aliceblue;"href="/gold-payments">Choose Plan</a>
+      </div>
+    </div>
+  </section>
+  <div class="btn-primary1">
+  <a style="z-index: 99;" href="/logout">Logout</a>
+  </div>
+<footer>
+    <div>&copy; <%= new Date().getFullYear() %> BitTrust Investment. All rights reserved.</div>
+  </footer>
+  <script src="/script.js"></script>
+</body>
+</html>

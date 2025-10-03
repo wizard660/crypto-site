@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment</title>
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    
+
+  </style>
+</head>
+<body>
+  <div class="bit-trust-logo-container">
+    <!-- Return Button -->
+    <!-- Return Button -->
+    <button class="return-btn">⬅</button>
+    <img class="bit-trust-logo" 
+    src="/Images/crypto/ChatGPT Image Oct 1, 2025, 05_23_32 AM.png" alt="">
+  </div>
+  <a href="/contact" class="support-fab">
+  <div class="support-icon">
+    💬
+  </div>
+  <span class="support-text">How can we help you?</span>
+</a>
+  <div class="payment-card">
+    <h2>Complete Your Payment</h2>
+    <p><strong>Package:</strong> <%= package %></p>
+
+    <div class="amount-section">
+      <p>Enter the exact amount you want to transfer:</p>
+      <input type="number" id="transferAmount" placeholder="Enter amount (USD)">
+      <br>
+      <button id="confirmPaymentBtn">OK</button>
+    </div>
+
+    <div class="confirmation hidden" id="confirmationBox">
+      <p><strong>Next Step:</strong></p>
+      <p>Please transfer <span id="finalAmount"></span> to one of the wallets below:</p>
+      <div style="display: flex; flex-direction: row;">
+      <div class="wallets">
+        <p style="color:#007bff;"><strong>BTC Wallet:</strong> bc1qexampleaddresshere</p>
+        <img src="/Images/QR_code_for_mobile_English_Wikipedia.svg" alt="BTC QR Code">
+      </div>
+
+      <div class="wallets">
+        <p style="color:#28a745;"><strong>ETH Wallet:</strong> 0xexampleaddresshere</p>
+        <img src="/images/QR_code_for_mobile_English_Wikipedia.svg" alt="ETH QR Code">
+      </div>
+      </div>
+      <div class="payment-actions" style="text-align:center; margin-top:20px;">
+      <button id="paymentSentBtn" class="btn-main">I’ve Sent Payment</button>
+    </div>
+    </div>
+  </div>
+
+<!-- Pop-up Modal -->
+<div id="paymentModal" class="modal-overlay">
+  <div class="modal-card">
+    <h2>Payment Sent</h2>
+    <p>Once your payment is received, your dashboard will be updated.</p>
+    <button id="doneBtn" class="btn-main">Done</button>
+  </div>
+</div>
+  <script src="/script.js"></script>
+</body>
+</html>

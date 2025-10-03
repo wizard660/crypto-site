@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Register | <%= title %></title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="bit-trust-logo-container">
+    <!-- Return Button -->
+    <!-- Return Button -->
+    <button class="return-btn">⬅</button>
+    <img class="bit-trust-logo" 
+    src="/Images/crypto/ChatGPT Image Oct 1, 2025, 05_23_32 AM.png" alt="">
+  </div>
+  <a href="/contact" class="support-fab">
+  <div class="support-icon">
+    💬
+  </div>
+  <span class="support-text">How can we help you?</span>
+</a>
+  <div class="new-div">
+    <div class="container">
+      <h1>Create Account</h1>
+      <p>Sign up and start investing with <%= title %></p>
+    </div>
+    </div>
+  <main class="form-container">
+    <form action="/register" method="POST" class="form-card">
+      <label>Name</label>
+      <input type="text" name="name" required>
+
+      <label>Email</label>
+      <input type="email" name="email" required>
+      <label>Phone no</label>
+      <input type="number" name="number" required>
+
+      <label>Password</label>
+      <input type="password" name="password" required>
+
+      <button type="submit">Register</button>
+      <p class="form-footer">
+        Already have an account? 
+        <a href="/login"><span style="color: #007bff;">Login</span></a> <br>
+        <a href="/"><span style="color: #ff0000;">← Back to Home</span></a>
+      </p>
+    </form>
+
+  </main>
+  <footer>
+    <div>&copy; <%= new Date().getFullYear() %> BitTrust Investment. All rights reserved.</div>
+  </footer>
+  <script src="/script.js"></script>
+
+</body>
+</html>
+

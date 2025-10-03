@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>BitTrust Investments</title>
+  <link rel="stylesheet" href="/style.css">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+
+  </head>
+<body>
+  <!-- Hero Section -->
+  <header class="hero-header">
+  <div class="overlay">
+    
+    <div class="h-text1">Welcome to BitTrust Investments</div>
+    <div class="h-text2">Your trusted crypto investment platform</div>
+    <a  href="/register" class="btn trigger-loader">Get Started</a>
+  </div>
+</header>
+<a href="/contact" class="support-fab">
+  <div class="support-icon">
+    💬
+  </div>
+  <span class="support-text">How can we help you?</span>
+</a>
+<!-- Loader Container -->
+<div class="hidden" id="loader-overlay">
+  <img src="/Images/crypto/ChatGPT Image Oct 1, 2025, 05_23_32 AM.png" 
+  alt="BitTrust Logo" class="loader-logo">
+</div>
+<section class="crypto-slider">
+  <div class="slider-track">
+    <img src="/images/crypto/bitcoin.svg" alt="Bitcoin">
+    <img src="/images/crypto/ethereum.svg" alt="Ethereum">
+    <img src="/images/crypto/binance.svg" alt="Binance">
+    <img src="/images/crypto/solana.svg" alt="Solana">
+    <img src="/images/crypto/dogecoin.svg" alt="Dogecoin">
+    <img src="/images/crypto/cardano.svg" alt="Cardano">
+
+    <!-- duplicate logos for smooth infinite loop -->
+    <img src="/images/crypto/bitcoin.svg" alt="Bitcoin">
+    <img src="/images/crypto/ethereum.svg" alt="Ethereum">
+    <img src="/images/crypto/binance.svg" alt="Binance">
+    <img src="/images/crypto/solana.svg" alt="Solana">
+    <img src="/images/crypto/dogecoin.svg" alt="Dogecoin">
+    <img src="/images/crypto/cardano.svg" alt="Cardano">
+  </div>
+</section>
+<!-- Floating Chat Notification -->
+<div id="chat-notification"></div>
+
+  <!-- About Us Section -->
+<section class="about-us">
+  <div class="container a-us">
+    <div><h2>About Us</h2></div>
+    <div><p>
+      At BitTrust Investments, we are dedicated to helping individuals grow their wealth through secure and innovative crypto investments. Our platform brings together years of trading expertise, advanced market insights, and proven strategies to deliver consistent results for our investors.
+      When you make a deposit with us, your investment is pooled together with others and carefully managed by our team of seasoned traders. We focus on high-potential, smaller market cryptocurrencies where our experience allows us to anticipate and influence trends. By strategically positioning in these assets, we create a predictable and stable growth path for your funds.
+  </p>
+    <p>
+      Unlike traditional investments, our model minimizes risk by leveraging coins and trading pairs where we have a high level of control and market influence. This means your returns are not left to chance, they are the outcome of deliberate planning and execution by experts who understand the dynamics of crypto at the deepest level.
+      Our goal is simple: to provide our clients with guaranteed growth, zero chance of loss, and absolute transparency. With BitTrust, your success is our priority, and your investment works for you from day one.
+    </p></div>
+  </div>
+</section>
+
+
+
+<!-- Why Choose Us Section -->
+<section class="why-choose-us">
+  <div class="container">
+    <h2>Why Choose Us</h2>
+    <div class="grid">
+      <div class="cards">
+        <i class="fas fa-balance-scale"></i>
+        <h3>Trusted Transparency</h3>
+        <p>Every transaction and profit calculation is open and easy to track.</p>
+      </div>
+      <div class="cards">
+        <i class="fas fa-layer-group"></i>
+        <h3>Flexible Investment Plans</h3>
+        <p>From starter packages to premium tiers, options fit your goals.</p>
+      </div>
+      <div class="cards">
+        <i class="fas fa-shield-alt"></i>
+        <h3>Security First</h3>
+        <p>Your funds and data are safeguarded with strong encryption.</p>
+      </div>
+      <div class="cards">
+        <i class="fas fa-chart-line"></i>
+        <h3>Consistent Returns</h3>
+        <p>Sustainable profits that balance growth and stability.</p>
+      </div>
+      <div class="cards">
+        <i class="fas fa-headset"></i>
+        <h3>Dedicated Support</h3>
+        <p>Our team is here to guide you every step of the way.</p>
+      </div>
+      <div class="cards">
+        <i class="fas fa-users"></i>
+        <h3>Community Driven</h3>
+        <p>Grow alongside a vibrant and supportive investor community.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Packages Section -->
+  <section class="packages">
+    <h2>Our Investment Plans</h2>
+    <div class="grid">
+      <div class="cards">
+        <h3>Starter</h3>
+        <p class="amount">$100-$1,000</p>
+        <p style="font-family: 'Open Sans', sans-serif;
+                  font-weight: 100;
+                  color: #333; /* Softer black for a friendlier feel */
+                  line-height: 0.8; margin: 5px 0px ;"
+                  ><span style="color: #007bff;">✔</span>  50% ROI</p>
+        <p style="font-family: 'Open Sans', sans-serif;
+                  font-weight: 100;
+                  color: #333; /* Softer black for a friendlier feel */
+                  line-height: 0.8; margin: 5px 0px "><span style="color: #007bff;">✔</span>  24/7 Expert Support</p>
+        <p style="font-family: 'Open Sans', sans-serif;
+                  font-weight: 100;
+                  color: #333; /* Softer black for a friendlier feel */
+                  line-height: 0.8; margin: 5px 0px "><span style="color: #007bff;">✔</span>  10% Referral Earnings</p>
+        <p style="font-family: 'Open Sans', sans-serif;
+                  font-weight: 100;
+                  color: #333; /* Softer black for a friendlier feel */
+                  line-height: 0.8; margin: 5px 0px 20px "><span style="color: #007bff;">✔</span>  1-2wks Profit Returns</p>
+        <a class="button" style="text-decoration: none; color: aliceblue;"href="/login">Choose Plan</a>
+      </div>
+      <div class="cards">
+        <h3>Bronze</h3>
+        <p class="amount">$1,000-$10,000</p>
+        <p style="font-family: 'Open Sans', sans-serif;
+                  font-weight: 100; margin: 5px 0px ;
+                  color: #333; /* Softer black for a friendlier feel */
+                  line-height: 0.8; margin: 5px 0px "><span style="color: #007bff;">✔</span>  50% ROI</p>
+        <p style="font-family: 'Open Sans', sans-serif;
+                  font-weight: 100; margin: 5px 0px ;
+                  color: #333; /* Softer black for a friendlier feel */
+                  line-height: 0.8; margin: 5px 0px "><span style="color: #007bff;">✔</span>  24/7 Expert Support</p>
+        <p style="font-family: 'Open Sans', sans-serif;
+                  font-weight: 100; margin: 5px 0px ;
+                  color: #333; /* Softer black for a friendlier feel */
+                  line-height: 0.8; margin: 5px 0px "><span style="color: #007bff;">✔</span>  15% Referral Earnings</p>
+        <p style="font-family: 'Open Sans', sans-serif;
+                  font-weight: 100; margin: 5px 0px 20px;
+                  color: #333; /* Softer black for a friendlier feel */
+                  line-height: 0.8; margin: 5px 0px 20px"><span style="color: #007bff;">✔</span>  1-2wks Profit Returns</p>
+        <a class="button" style="text-decoration: none; color: aliceblue;"href="/login">Choose Plan</a>
+      </div>
+      <div class="cards">
+        <h3>Silver</h3>
+        <p class="amount">$10,000-$50,000</p>
+        <p style="font-family: 'Open Sans', sans-serif;
+                  font-weight: 100; margin: 5px 0px ;
+                  color: #333; /* Softer black for a friendlier feel */
+                  line-height: 0.8;"><span style="color: #007bff;">✔</span>  100% ROI</p>
+        <p style="font-family: 'Open Sans', sans-serif;
+                  font-weight: 100; margin: 5px 0px ;
+                  color: #333; /* Softer black for a friendlier feel */
+                  line-height: 0.8;"><span style="color: #007bff;">✔</span>  24/7 Expert Support</p>
+        <p style="font-family: 'Open Sans', sans-serif;
+                  font-weight: 100; margin: 5px 0px ;
+                  color: #333; /* Softer black for a friendlier feel */
+                  line-height: 0.8;"><span style="color: #007bff;">✔</span>  20% Referral Earnings</p>
+        <p style="font-family: 'Open Sans', sans-serif;
+                  font-weight: 100; margin: 5px 0px 20px;
+                  color: #333; /* Softer black for a friendlier feel */
+                  line-height: 0.8;"><span style="color: #007bff;">✔</span>  1-2wks Profit Returns</p>
+        <a class="button" style="text-decoration: none; color: aliceblue;"href="/login">Choose Plan</a>
+      </div>
+      <div class="cards">
+        <h3>Gold</h3>
+        <p class="amount">$50,000 and above</p>
+        <p style="font-family: 'Open Sans', sans-serif;
+                  font-weight: 100; margin: 5px 0px ;
+                  color: #333; /* Softer black for a friendlier feel */
+                  line-height: 0.8;"><span style="color: #007bff;">✔</span>  100% ROI</p>
+        <p style="font-family: 'Open Sans', sans-serif;
+                  font-weight: 100; margin: 5px 0px ;
+                  color: #333; /* Softer black for a friendlier feel */
+                  line-height: 0.8;"><span style="color: #007bff;">✔</span>  24/7 Expert Support</p>
+        <p style="font-family: 'Open Sans', sans-serif;
+                  font-weight: 100; margin: 5px 0px ;
+                  color: #333; /* Softer black for a friendlier feel */
+                  line-height: 0.8;"><span style="color: #007bff;">✔</span>  30% Referral Earnings</p>
+        <p style="font-family: 'Open Sans', sans-serif;
+                  font-weight: 100; margin: 5px 0px 20px ;
+                  color: #333; /* Softer black for a friendlier feel */
+                  line-height: 0.8;"> <span style="color: #007bff;">✔</span>  1-2wks Profit Returns</p>
+        <a class="button" style="text-decoration: none; color: aliceblue;"href="/login">Choose Plan</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <h2>What Our Users Say</h2>
+    <div class="testimony-grid">
+      <div class="testimony">
+        "I doubled my money in just 2 weeks! Couldn't believe it!"
+        <div style="margin-top: 10px; font-weight: bold;">~chris155</div>
+      </div>
+      <div class="testimony">
+        "The Bronze plan gave me steady returns. Trustworthy platform."
+        <div style="margin-top: 10px; font-weight: bold;">~lisabecks</div>
+      </div>
+      <div class="testimony">
+        "This platform has helped alot! Crypto investing has never been easier!"
+        <div style="margin-top: 10px; font-weight: bold;">~darell</div>
+      </div>
+      <div class="testimony">
+        "Customer support is amazing and truly supportive. Thank You!"
+        <div style="margin-top: 10px; font-weight: bold;">~johnson22</div>
+      </div>
+      <div class="testimony">
+        "Very safe, really fast, and 100% reliable. Highly recommend."
+        <div style="margin-top: 10px; font-weight: bold;">~emilylockwood</div>
+      </div>
+      <div class="testimony">
+        "I started very small, now I’m scaling up to Gold every week."
+        <div style="margin-top: 10px; font-weight: bold;">~tyla001</div>
+      </div>
+      <div class="testimony">
+        "Super clean dashboard, swift payment and easy withdrawals."
+        <div style="margin-top: 10px; font-weight: bold;">~elinafords</div>
+      </div>
+      <div class="testimony">
+        "Exactly as promised, got my profits on time without stories."
+        <div style="margin-top: 10px; font-weight: bold;">~richard</div>
+      </div>
+      <div class="testimony">
+        "Ngl this is the best investment platform I’ve tried so far."
+        <div style="margin-top: 10px; font-weight: bold;">~jasonmiller1</div>
+      </div>
+      <div class="testimony">
+        "Super simple, really transparent, and profitable. i'm suprised"
+        <div style="margin-top: 10px; font-weight: bold;">~norah555</div>
+      </div>
+      
+    </div>
+  </section>
+  <header class="c-us">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>We’re here to help you with your investment questions.</p>
+    </div>
+  </header>
+
+  <main class="contact-container">
+    <div class="contact-form">
+  <h2>Send Us a Message</h2>
+  <form id="contactForm" action="/contact" method="POST">
+    <div class="form-group">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="form-group">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+    </div>
+
+    <button class="trigger-loader" type="submit">Send Message</button>
+  </form>
+</div>
+
+<!-- Hidden confirmation card -->
+<div id="confirmationCard" class="card hidden">
+  <h3><span style="color: #007bff;">✔</span> Message Sent</h3>
+  <p></p>
+  <button id="closeConfirmation">Cancel</button>
+</div>
+
+
+    <div class="contact-info">
+      <h2>Other Ways to Reach Us</h2>
+      <p><strong>Email:</strong><span style="color: #007bff;"> support@cryptoinvestment.com</span></p>
+      <p>
+        <strong>WhatsApp:</strong>
+        <a href="https://wa.me/1234567890" target="_blank">Chat on WhatsApp</a>
+      </p>
+      <p>
+        <strong>Telegram:</strong>
+        <a href="https://t.me/cryptoinvestment" target="_blank">Join our Telegram</a>
+      </p>
+      <p><strong>TikTok:</strong>
+        <a href="https://t.me/cryptoinvestment" target="_blank">Join our TikTok</a>
+      </p>
+      <p>
+        <strong>Instagram:</strong>
+        <a href="https://wa.me/1234567890" target="_blank">Chat on Instagram</a>
+      </p>
+      <p>
+        <strong>Twitter:</strong>
+        <a href="https://t.me/cryptoinvestment" target="_blank">Join our Twitter</a>
+      </p>
+      <p>
+        <strong>Facebook:</strong>
+        <a href="https://t.me/cryptoinvestment" target="_blank">Join our Facebook</a>
+      </p>
+    </div>
+  </main>
+<div class="faq-containerss">
+  <h2 class="faq-title">Frequently Asked Questions(click any faq)</h2>
+  <div class="faq-containers">
+  <div class="faq-container">
+
+  <div class="faq-card">
+    <div class="faq-question">1. What is this platform about?</div>
+    <div class="faq-answer">
+      Our platform allows you to invest in crypto packages and track your profits easily in your personal dashboard.
+    </div>
+  </div>
+
+  <div class="faq-card">
+    <div class="faq-question">2. Is my money safe here?</div>
+    <div class="faq-answer">
+      Yes, we use strict security protocols and multi-layer verification to ensure user funds and data remain safe.
+    </div>
+  </div>
+
+  <div class="faq-card">
+    <div class="faq-question">3. How do I start investing?</div>
+    <div class="faq-answer">
+      Simply sign up, complete your KYC, choose a package, and fund your wallet to begin investing immediately.
+    </div>
+  </div>
+
+  <div class="faq-card">
+    <div class="faq-question">4. What payment methods are accepted?</div>
+    <div class="faq-answer">
+      We accept crypto deposits (BTC, ETH, USDT) and will add more secure options in the future.
+    </div>
+  </div>
+
+  <div class="faq-card">
+    <div class="faq-question">5. Can I withdraw anytime?</div>
+    <div class="faq-answer">
+      Yes, withdrawals can be requested anytime, but processing depends on your package terms and blockchain confirmations.
+    </div>
+  </div>
+</div>
+<div class="faq-container">
+  <div class="faq-card">
+    <div class="faq-question">6. Why do I need to complete KYC?</div>
+    <div class="faq-answer">
+      KYC helps us verify users, prevent fraud, and comply with financial regulations for safer transactions.
+    </div>
+  </div>
+
+  <div class="faq-card">
+    <div class="faq-question">7. How long does KYC approval take?</div>
+    <div class="faq-answer">
+      Usually 24–48 hours. You’ll receive an email once your account is verified.
+    </div>
+  </div>
+
+  <div class="faq-card">
+    <div class="faq-question">8. Do you charge hidden fees?</div>
+    <div class="faq-answer">
+      No hidden fees. All charges are clearly displayed before you invest or withdraw.
+    </div>
+  </div>
+
+  <div class="faq-card">
+    <div class="faq-question">9. How can I contact support?</div>
+    <div class="faq-answer">
+      You can reach us anytime via the contact form on your dashboard or by email. Our support team is available 24/7.
+    </div>
+  </div>
+
+  <div class="faq-card">
+    <div class="faq-question">10. What happens if I forget my password?</div>
+    <div class="faq-answer">
+      You can reset it using the “Forgot Password” option on the login page. For security, we send a reset link to your registered email.
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+  <footer>
+    <div>&copy; <%= new Date().getFullYear() %> BitTrust Investment. All rights reserved.</div>
+  </footer>
+  <script src="/script.js" defer></script>
+</body>
+</html>
