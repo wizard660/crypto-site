@@ -25,7 +25,7 @@
   <main class="contact-containers">
     <div class="contact-form">
       <h2>Send Us a Message and we'll give u a feed back via email</h2>
-      <form action="/contact" method="POST">
+      <form id="contactForm" action="/contact" method="POST">
         <div class="form-group">
           <label for="name">Your Name</label>
           <input type="text" id="name" name="name" required>
@@ -46,10 +46,16 @@
     </div>
 
   </main>
-
+<!-- Popup container -->
+<div id="popup" class="popup hidden">
+  <div class="popup-card">
+    <p id="popupMessage"></p>
+    <button id="popupClose">OK</button>
+  </div>
+</div>
   <footer>
     <div>&copy; <%= new Date().getFullYear() %> BitTrust Investment. All rights reserved.</div>
   </footer>
-  <script src="/script.js"></script>
+  <script src="/script.js" ></script>
 </body>
 </html>

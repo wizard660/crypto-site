@@ -110,53 +110,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
-document.addEventListener("DOMContentLoaded", () => {
-  const contactForm = document.getElementById("contactForm");
-  const confirmationCard = document.getElementById("confirmationCard");
-  const closeConfirmation = document.getElementById("closeConfirmation");
-  const loaderOverlay = document.getElementById("loader-overlay");
 
-  if (contactForm) {
-    contactForm.addEventListener("submit", async (e) => {
-      e.preventDefault();
-
-      const formData = new FormData(contactForm);
-
-      // Show loader
-      loaderOverlay.classList.remove("hidden");
-
-      try {
-        const response = await fetch("/contact", {
-          method: "POST",
-          body: formData
-        });
-
-        const result = await response.json();
-
-        // Hide loader after response
-        loaderOverlay.classList.add("hidden");
-
-        if (result.success) {
-          confirmationCard.querySelector("p").textContent = result.message;
-          confirmationCard.classList.remove("hidden");
-          contactForm.reset();
-        } else {
-          alert(result.message || "❌ Something went wrong.");
-        }
-      } catch (err) {
-        loaderOverlay.classList.add("hidden");
-        alert("⚠️ Network error, please try again.");
-      }
-    });
-  }
-
-  if (closeConfirmation) {
-    closeConfirmation.addEventListener("click", () => {
-      confirmationCard.classList.add("hidden");
-      loaderOverlay.classList.add("hidden"); // stop loader glow
-    });
-  }
-});
 document.addEventListener("DOMContentLoaded", () => {
   const faqCards = document.querySelectorAll(".faq-card");
 
